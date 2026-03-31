@@ -30,7 +30,7 @@ namespace ExerciciosAula03
             // 💡 Dica: Use Console.ReadLine() e Convert.ToInt32()
  
             Console.WriteLine("📝 Exercício 1: Classificação de números\n");
-            Console.Write("Digite um número: ");
+            Console.WriteLine("Digite um número: ");
  
             // ESCREVA SEU CÓDIGO AQUI
             int num = -7;
@@ -58,12 +58,12 @@ namespace ExerciciosAula03
             // 💡 Sintaxe do ternário: condição ? valor_se_true : valor_se_false
  
             Console.WriteLine("📝 Exercício 2: Par ou Ímpar (Ternário)\n");
-            Console.Write("Digite um número: ");
+            Console.WriteLine("Digite um número: ");
  
             // ESCREVA SEU CÓDIGO AQUI
 
             string veri = (num % 2 == 0) ? "Par" : "Impar";
-            Console.Write($"O Numumero {num} é {veri}");
+            Console.WriteLine($"O Numumero {num} é {veri}");
  
             Console.WriteLine();
  
@@ -85,32 +85,32 @@ namespace ExerciciosAula03
             // 💡 Cada case deve terminar com break
  
             Console.WriteLine("\n📝 Exercício 3: Dias da semana (Switch)\n");
-            Console.Write("Digite um número de 1 a 7: ");
+            Console.WriteLine("Digite um número de 1 a 7: ");
  
             // ESCREVA SEU CÓDIGO AQUI
 
             switch (num)
             {
                 case 1:
-                    Console.Write("Segunda");
+                    Console.WriteLine("Segunda");
                     break;
                 case 2:
-                    Console.Write("Terça");
+                    Console.WriteLine("Terça");
                     break;
                 case 3:
-                    Console.Write("Quarta");
+                    Console.WriteLine("Quarta");
                     break;
                 case 4:
-                    Console.Write("Quinta");
+                    Console.WriteLine("Quinta");
                     break;
                 case 5:
-                    Console.Write("Sexta");
+                    Console.WriteLine("Sexta");
                     break;
                 case 6:
-                    Console.Write("Sabado");
+                    Console.WriteLine("Sabado");
                     break;
                 default:
-                    Console.Write("Domingo");
+                    Console.WriteLine("Domingo");
                     break;
             }
  
@@ -128,7 +128,7 @@ namespace ExerciciosAula03
             // 💡 Use == para comparar strings
  
             Console.WriteLine("\n📝 Exercício 4: Sistema de Autenticação\n");
-            Console.Write("Username: ");
+            Console.WriteLine("Username: ");
  
             // ESCREVA SEU CÓDIGO AQUI
             string nome = "admin";
@@ -136,14 +136,62 @@ namespace ExerciciosAula03
 
             if (nome == "admin" && pass == 1234)
             {
-                Console.Write("ACESSO PERMITIDO");
+                Console.WriteLine("ACESSO PERMITIDO");
             }
             else
             {
-                Console.Write("ACESSO NEGADO");
+                Console.WriteLine("ACESSO NEGADO");
             }
 
-            Console.WriteLine();
+            Console.WriteLine("\n");
+
+            //  Exercícios de FOR
+            
+            Console.WriteLine("Contagem progressiva de 1 a 5");
+            for (int i = 1; i < 6; i++)
+            {
+                Console.WriteLine($"{i}\n");
+            }
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Gerar números pares em sequência até 10");
+            for (int i = 1; i < 6; i++)
+            {
+                Console.WriteLine($"{i * 2}\n");
+            }
+            
+            Console.WriteLine("\n");
+            Console.WriteLine("Calcular e exibir tabuada do 7");
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine($"{i} * 7 = {i * 7}\n");
+            }
+
+            //  Exercícios de WHILE
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Contagem regressiva de 5 a 1");
+        
+            int numero = 5;
+            while (numero >= 1)
+            {
+                Console.WriteLine($"{numero}\n");
+                numero--;
+            }
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Acumular valores até atingir um limite de 100");
+            
+            int vale = 1;
+            int som = 0;
+            while (som < 100)
+            {
+                Console.Write($"{som+vale},");
+                som += vale;
+            }
+             
+            Console.WriteLine("\n");
+            Console.WriteLine("Validar senha com número limitado de tentativas");
  
             // ===================================================
             // RESUMO FINAL
